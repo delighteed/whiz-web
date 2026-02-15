@@ -78,43 +78,25 @@ export default function SiteAssistant() {
 
     return (
         <>
-            {/* Floating Assistant - Asset B: Bird on Branch */}
+            {/* Floating Assistant Trigger - Clean Premium FAB */}
             <motion.div
-                initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                className="fixed bottom-0 -right-[20px] z-50 pointer-events-none"
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                className="fixed bottom-8 right-8 z-50"
             >
                 <button
                     onClick={() => setIsOpen(true)}
-                    className="w-56 h-56 group pointer-events-auto bg-transparent border-none p-0 outline-none relative"
+                    className="group relative p-4 rounded-2xl bg-primary text-background shadow-[0_10px_40px_rgba(244,246,250,0.25)] hover:shadow-[0_15px_50px_rgba(244,246,250,0.35)] transition-all duration-300 hover:-translate-y-1 active:scale-95 border border-white/10"
                 >
-                    {/* Natural Micro-motion Container */}
-                    <motion.div
-                        className="relative w-full h-full"
-                        animate={{
-                            rotate: [-0.5, 0.5, -0.5],
-                            y: [0, -2, 0]
-                        }}
-                        transition={{
-                            duration: 8,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                        }}
-                        style={{ transformOrigin: "right center" }}
-                    >
-                        {/* Anchor Shadow where branch meets edge */}
-                        <div className="absolute right-4 bottom-4 w-12 h-24 bg-black/20 blur-2xl rounded-full opacity-60 group-hover:opacity-80 transition-opacity" />
+                    <div className="relative z-10">
+                        <MessageSquare className="w-6 h-6" />
+                    </div>
+                    {/* Ring Glow Effect */}
+                    <div className="absolute inset-0 rounded-2xl bg-white/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                        <div className="relative w-full h-full transform scale-x-[-1]">
-                            <Image
-                                src="/assistant-bird-branch.png"
-                                alt="Assistant Bird"
-                                fill
-                                className="object-contain object-right-bottom filter drop-shadow-[0_6px_20px_rgba(0,0,0,0.25)] transition-all group-hover:scale-[1.02]"
-                            />
-                        </div>
-                    </motion.div>
+                    {/* Active Status Dot */}
+                    <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent-sage rounded-full border-2 border-background animate-pulse" />
                 </button>
             </motion.div>
 
