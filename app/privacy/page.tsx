@@ -14,7 +14,7 @@ export default function PrivacyPage() {
                             Your Privacy is <br /> <span className="text-primary italic">Non-Negotiable</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-foreground/80 max-w-xl mx-auto font-medium">
-                            Cognexis is designed to observe your fatigue, not you.
+                            Whiz is designed to observe your fatigue, not you.
                         </p>
                     </header>
                 </ScrollReveal>

@@ -17,7 +17,7 @@ export default function DemoPage() {
                             Early Access Concept
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                            Experience Cognexis
+                            Experience Whiz
                         </h1>
                         <p className="text-xl md:text-2xl text-foreground/70 max-w-2xl mx-auto font-medium">
                             See how we detect early signs of fatigue before they become burnout.
@@ -31,7 +31,7 @@ export default function DemoPage() {
                         <iframe
                             className="absolute inset-0 w-full h-full"
                             src="https://www.youtube.com/embed/qRFdpq-NLb4"
-                            title="Cognexis Demo"
+                            title="Whiz Demo"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen

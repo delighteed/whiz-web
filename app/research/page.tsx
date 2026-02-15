@@ -68,7 +68,7 @@ export default function ResearchPage() {
                     </ScrollReveal>
                     <ScrollReveal speed="slow" className="space-y-8">
                         <p className="text-foreground/70 text-xl leading-relaxed">
-                            Cognexis is built on a simple premise: <strong className="text-foreground">Awareness beats willpower.</strong>
+                            Whiz is built on a simple premise: <strong className="text-foreground">Awareness beats willpower.</strong>
                         </p>
                         <p className="text-foreground/70 text-xl leading-relaxed">
                             We use standard, non-invasive metrics to help you tune into your own body.

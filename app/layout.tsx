@@ -34,7 +34,7 @@ export default function RootLayout({
           <IntroOverlay />
           <NavBar />
           {children}
-          {/* <SiteAssistant /> */}
+          <SiteAssistant />
         </LanguageProvider>
       </body>
     </html>
