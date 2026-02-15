@@ -25,35 +25,17 @@ export default function DemoPage() {
                     </div>
                 </ScrollReveal>
 
-                {/* Demo Container */}
+                {/* Demo Container - YouTube Embed */}
                 <ScrollReveal speed="normal">
-                    <div className="relative w-full aspect-video rounded-[2.5rem] overflow-hidden flex flex-col items-center justify-center text-center !p-0 !bg-transparent !border-0 !shadow-none">
-                        <div className="w-full h-full flex flex-col items-center justify-center p-12 space-y-8 group">
-                            <div className="w-20 h-20 bg-navy-light rounded-3xl border border-white/5 flex items-center justify-center shadow-lg text-primary transform transition-transform group-hover:scale-110">
-                                <Video size={40} />
-                            </div>
-
-                            <div className="space-y-4 max-w-md">
-                                <h3 className="text-2xl font-bold text-foreground">Camera Access Required</h3>
-                                <p className="text-lg text-foreground/60 leading-relaxed">
-                                    Cognexis needs to see your eyes to detect strain.
-                                    <br />
-                                    <strong className="text-foreground/80">No video is ever recorded or sent to a server.</strong>
-                                </p>
-                                <p className="text-sm text-foreground/40 italic pt-4 font-medium">
-                                    This experiment is about understanding your bio-rhythms, not measuring your performance.
-                                </p>
-                            </div>
-
-                            <button className="px-10 py-5 bg-primary text-white rounded-full font-bold text-lg hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 disabled:opacity-50">
-                                Start Live Demo
-                            </button>
-
-                            <div className="absolute bottom-6 text-sm text-foreground/40 flex items-center gap-2 font-medium">
-                                <ShieldCheck size={18} />
-                                Computed locally on your device
-                            </div>
-                        </div>
+                    <div className="relative w-full aspect-video rounded-[2.5rem] overflow-hidden bg-navy-light border border-white/5 shadow-2xl">
+                        <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/qRFdpq-NLb4"
+                            title="Cognexis Demo"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </ScrollReveal>
 
